@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jokes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <div class="icons">
+        <button class="like-btn" onclick="showJokes('liked')">
+            See All liked Jokes
+        </button>
+        <button class="dislike-btn" onclick="showJokes('disliked')">
+            See All Disliked Jokes
+        </button>
+    </div>
+
+    <h1>Best Jokes in the world!</h1>
+    <div id="joke-card">
+    </div>
+
+    <div className="buttons">
+        <Button class="like-btn" onclick="addJokeToLiked()"><i class="fas fa-thumbs-up"></i> Like</Button>
+        <Button class=" dislike-btn" onclick="addJokeToDisliked()"><i class="fas fa-thumbs-down"></i> Dislike</Button>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
